@@ -152,7 +152,7 @@ to be layered on top of  each  other  and  allow  new  vnode
 operations to be added without requiring changes to existing
 filesystem implementations.
 
-In addition to the local ``fast filesystem'',  we  have
+In addition to the local fast filesystem,  we  have
 added an implementation of the network filesystem (NFS) that
 fully interoperates with the NFS  shipped  by  Sun  and  its
 licensees.   Because  our NFS implementation was implemented
