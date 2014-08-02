@@ -15,8 +15,8 @@ tion (see attached press release), and the University is now
 able to release 4.4BSD-Lite.  We strongly recommend that you
 replace any Net/2 source or binary code with 4.4BSD-Lite.
 
-     The 4.4BSD-Lite software is copyrighted by the  Univer-
-sity  of  California and others, but may be freely redistri-
+The 4.4BSD-Lite software is copyrighted by the  University  
+of  California and others, but may be freely redistri-
 buted without fee.  It is available to anyone  and  requires
 no previous license from AT&T, Novell/USL, or The Regents of
 the University of  California.   The  distribution  includes
@@ -27,14 +27,14 @@ without fee, if the due credit, copyright notice, and  other
 requirements  described  in the license and the source files
 are met.
 
-     This packet is intended to  serve  two  purposes.   The
+This packet is intended to  serve  two  purposes.   The
 first  is  to acquaint you with the details of our distribu-
 tion so you may decide if you  wish  to  purchase  it.   The
 second is to inform you how to obtain our distribution.
 
 Distribution contents
 
-     The distribution is a  source  distribution  only,  and
+The distribution is a  source  distribution  only,  and
 does  not contain program binaries for any architecture.  It
 will not be possible to compile or run this software without
 a pre-existing system that is already installed and running.
@@ -52,31 +52,31 @@ be anyone available at Berkeley to assist with problems,  so
 sites  are  encouraged  to  ensure enough local expertise to
 find and fix any problems that are encountered.
 
-     We have attempted to make the system as compliant  with
+We have attempted to make the system as compliant  with
 the ANSI C and IEEE POSIX 1003.1 and 1003.2 standards as was
 possible at the time of its release.  We  have  not  run  it
 through  any  of  the  verification  test  suites, thus, you
 should not claim conformance with  either  standard  without
 first validating the code.
 
-     This software distribution is  only  available  on  two
+This software distribution is  only  available  on  two
 6250bpi  1/2''  9-track  tapes  or one 8mm Exabyte cassette.
 The 4.4BSD-Lite distribution contains source for the follow-
 ing architectures:
 
-+    HP 9000/300 68000-based workstations,
+     +    HP 9000/300 68000-based workstations,
 
-+    DECstation 3100 and 5000 MIPS-based workstations,
+     +    DECstation 3100 and 5000 MIPS-based workstations,
 
-+    Sparcstation I & II  SPARC-based  workstations  (Please
+     +    Sparcstation I & II  SPARC-based  workstations  (Please
      note that the distribution does not support the Sparcs-
      tation 10.),
 
-+    Sony News MIPS-based workstations,
+     +    Sony News MIPS-based workstations,
 
-+    Omron Luna 68000-based workstations,
+     +    Omron Luna 68000-based workstations,
 
-+    Intel 386/486-based machines (ISA/AT or EISA bus only).
+     +    Intel 386/486-based machines (ISA/AT or EISA bus only).
 
 The distribution does not include the  machine  support  for
 the  Tahoe  and VAX architectures found in previous BSD dis-
@@ -89,7 +89,7 @@ robustness,  reliability,  or  completeness.   More specifi-
 cally, the support for the x86 architectures is known to  be
 unstable.
 
-     The major new facilities available in  the  4.4BSD-Lite
+The major new facilities available in  the  4.4BSD-Lite
 release  are  a  new  virtual memory system, the addition of
 ISO/OSI networking support, a new virtual filesystem  inter-
 face  supporting  filesystem stacking, a freely redistribut-
@@ -113,7 +113,7 @@ to be compatible with ANSI C, including function  prototypes
 for  the  exported  functions.   There  are  numerous  other
 changes throughout the system.
 
-     The new virtual memory implementation is  derived  from
+The new virtual memory implementation is  derived  from
 the  MACH  operating  system  developed  at  Carnegie-Mellon
 University, and was ported to the BSD kernel at the  Univer-
 sity of Utah.  The MACH virtual memory system call interface
@@ -129,7 +129,7 @@ heavy memory load.  The internal kernel interfaces have  not
 yet been completed and the memory pool and buffer cache have
 not been merged.
 
-     The ISO/OSI Networking consists of a kernel implementa-
+The ISO/OSI Networking consists of a kernel implementa-
 tion  of transport class 4 (TP-4), connectionless networking
 protocol  (CLNP),   and   802.3-based   link-level   support
 (hardware-compatible with Ethernet*).  We also include  sup-
@@ -152,7 +152,7 @@ to be layered on top of  each  other  and  allow  new  vnode
 operations to be added without requiring changes to existing
 filesystem implementations.
 
-     In addition to the local ``fast filesystem'',  we  have
+In addition to the local ``fast filesystem'',  we  have
 added an implementation of the network filesystem (NFS) that
 fully interoperates with the NFS  shipped  by  Sun  and  its
 licensees.   Because  our NFS implementation was implemented
@@ -167,7 +167,7 @@ Leases  to  allow  a limited callback mechanism that greatly
 reduces the network traffic necessary to maintain cache con-
 sistency between the server and its clients.
 
-     A new log-structured filesystem  has  been  added  that
+A new log-structured filesystem  has  been  added  that
 provides near disk-speed output and fast crash recovery.  It
 is still experimental in the 4.4BSD-Lite release, so  we  do
 not  recommend  it for production use.  We have also added a
@@ -175,7 +175,7 @@ memory-based filesystem that runs in pageable memory, allow-
 ing  large temporary filesystems without requiring dedicated
 physical memory.
 
-     The local ``fast filesystem'' has been enhanced  to  do
+The local ``fast filesystem'' has been enhanced  to  do
 clustering  which  allows  large pieces of files to be allo-
 cated contiguously resulting in near doubling of  filesystem
 throughput.   The  filesystem interface has been extended to
@@ -186,7 +186,7 @@ is  based  on time rather than the previous metric of number
 of logins over quota.  This change makes quotas more  useful
 on fileservers onto which users seldom login.
 
-     The system security has been greatly  enhanced  by  the
+The system security has been greatly  enhanced  by  the
 addition  of  additional file flags that permit a file to be
 marked as immutable or append only.  Once set,  these  flags
 can  only  be  cleared  by the super-user when the system is
@@ -197,7 +197,7 @@ reading of kernel data structures must be done using  a  new
 described through  an  extensible  ``Management  Information
 Base'' (MIB).
 
-     The  4.4BSD-Lite  distribution  contains  most  of  the
+The  4.4BSD-Lite  distribution  contains  most  of  the
 interfaces  specified in the IEEE Std1003.1 system interface
 standard.  The biggest area of  change  is  a  new  terminal
 driver.   The terminal driver meets the POSIX interface with
@@ -210,7 +210,7 @@ interface, but adds a security model that was missing in the
 IEEE Std1003.1 signals, FIFOs, byte-range file locking,  and
 saved user and group identifiers.
 
-     There are several new tools and utilities  included  in
+There are several new tools and utilities  included  in
 this  release.  A new version of make allows much-simplified
 makefiles for the system software and allows compilation for
 multiple  architectures from the same source tree (which may
@@ -223,7 +223,7 @@ versions of programs that display system status information,
 new implementations of various traditional  tools  described
 in the IEEE Std1003.2 standard, and many others.
 
-     We have been tracking  the  IEEE  Std1003.2  shell  and
+We have been tracking  the  IEEE  Std1003.2  shell  and
 utility  work  and  have  included prototypes of many of the
 proposed utilities.  Because most of the traditional  utili-
 ties  have  been replaced with implementations conformant to
@@ -241,7 +241,7 @@ compiler (gcc) is a superset of ANSI C, but supports  tradi-
 tional C as a command-line option.  The system libraries and
 utilities all compile with either ANSI or traditional C.
 
-     Work  has  also  progressed  in  several  other  areas.
+Work  has  also  progressed  in  several  other  areas.
 Several important enhancements have been added to the TCP/IP
 protocols including TCP header prediction and serial line IP
 (SLIP)  with header compression.  Ethernet multicast support
@@ -252,11 +252,11 @@ found  in  the ISO protocols.  The routing table also stores
 and caches route characteristics to speed the adaptation  of
 the throughput and congestion avoidance algorithms.
 
-     The Kerberos (version 4)  authentication  software  has
+The Kerberos (version 4)  authentication  software  has
 been  integrated  into much of the system (including NFS) to
 provide the first real network authentication on BSD.
 
-     This release includes several important structural ker-
+This release includes several important structural ker-
 nel  changes.   The  kernel  uses a new internal system call
 convention; the use  of  global  (``u-dot'')  variables  for
 parameters and error returns has been eliminated, and inter-
@@ -271,7 +271,7 @@ The  sleep  interface  (tsleep) can be used at any priority,
 but is only interruptible if the PCATCH flag is  set.   When
 interrupted, tsleep returns EINTR or ERESTART.
 
-     Many data structures that  were  previously  statically
+Many data structures that  were  previously  statically
 allocated  are  now allocated dynamically.  These structures
 include mount entries, file entries, user open file descrip-
 tors,  the process entries, the vnode table, the name cache,
@@ -279,13 +279,13 @@ and the quota structures.
 
 How to obtain 4.4BSD-Lite
 
-     To obtain  4.4BSD-Lite  we  require  execution  of  the
+To obtain  4.4BSD-Lite  we  require  execution  of  the
 Berkeley  License  Agreement  (3/94).   In addition, foreign
 licensees must  execute  Addendum  Number  One  for  Foreign
 Licensees  in ordering 4.4BSD-Lite.  The fee is $1000.00 for
 4.4BSD-Lite.
 
-     Because we are a research and development  organization
+Because we are a research and development  organization
 and  not  a  commercial  organization,  we make our research
 results available for a small license  fee.   We  distribute
 only  the  whole system ``As Is'' and cannot send individual
@@ -293,11 +293,11 @@ pieces of the system.  We are required by the University  of
 California  to  have  a formal license arrangement with each
 organization to which we distribute.
 
-     Specifically, for 4.4BSD-Lite,  we  must  receive  from
+Specifically, for 4.4BSD-Lite,  we  must  receive  from
 your  organization the following material before the distri-
 bution can be sent:
 
-+    Two original signed and executed copies of the Berkeley
+     +    Two original signed and executed copies of the Berkeley
      License Agreement (3/94) between your company or insti-
      tution and The Regents of the University of  California
      along  with Exhibit A properly filled out.  For Foreign
@@ -309,20 +309,20 @@ bution can be sent:
      after  it  has  been  executed  by  The  Regents of the
      University of California.
 
-+    A check from a U.S. bank for $1000.00 must be  received
-     before  the distribution can be sent.  Checks should be
-     made payable to ``The Regents of the University of Cal-
-     ifornia, Computer Systems Research Group.'' If you must
-     issue a Purchase Order, together with your  prepayment,
-     please  issue one that is blank-backed.  If this is not
-     possible, insert and initial in the body  of  the  Pur-
-     chase  Order the following clause: ``The terms and con-
-     ditions of this Purchase Order are not accepted by  The
-     Regents  of  the University of California.  The revised
-     Berkeley  License  Agreement  (3/94)  prevails.''  Wire
-     transfers are strongly discouraged.
+      +    A check from a U.S. bank for $1000.00 must be  received
+          before  the distribution can be sent.  Checks should be
+          made payable to ``The Regents of the University of Cal-
+          ifornia, Computer Systems Research Group.'' If you must
+          issue a Purchase Order, together with your  prepayment,
+          please  issue one that is blank-backed.  If this is not
+          possible, insert and initial in the body  of  the  Pur-
+          chase  Order the following clause: ``The terms and con-
+          ditions of this Purchase Order are not accepted by  The
+          Regents  of  the University of California.  The revised
+          Berkeley  License  Agreement  (3/94)  prevails.''  Wire
+          transfers are strongly discouraged.
 
-+    The attached Site Information  Form  completely  filled
+     +    The attached Site Information  Form  completely  filled
      out.   Your  copy  of  the  signed  4.4BSD-Lite License
      Agreement will be sent to  the  person  listed  as  the
      administrative  contact.   The distribution itself will
@@ -355,7 +355,7 @@ collect  shipping  charges.  If the destination is one where
 collect shipment cannot be made by the carrier, then advance
 payment of the shipping charges will be required.
 
-     The most expedient way to ensure that your full distri-
+The most expedient way to ensure that your full distri-
 bution  is  sent  as  quickly as possible is to include in a
 single package two original copies of the appropriate Berke-
 ley License Agreement completed and properly signed (without
@@ -365,7 +365,7 @@ Research Group'' and a completely filled out  Site  Informa-
 tion  Form  and  to  send this single package to the address
 noted above.
 
-     Please note that if you  modify  the  Berkeley  License
+Please note that if you  modify  the  Berkeley  License
 Agreement,  you  may  experience  a delay of three months or
 more  before  receiving  an  acceptance  or  denial  of  the
 changes.  We reserve the right to cancel your application if
@@ -374,7 +374,7 @@ from the date it was sent to us.
 
 Special Cases
 
-     University of California Sites.  If you are a  part  of
+University of California Sites.  If you are a  part  of
 the  University  of  California, the following items must be
 sent to the Computer Systems Research Group: 1) a letter  of
 authorization  signed  by the Director or Head of Department
@@ -385,7 +385,7 @@ and 3) a Site Information Form.
 
 A Special Note
 
-     The procedures and rules set out in this  document  are
+The procedures and rules set out in this  document  are
 University constraints that must be followed for the distri-
 bution of software to be  possible.   The  Computer  Systems
 Research  Group  has  no  control over these constraints and
