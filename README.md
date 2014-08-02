@@ -117,8 +117,8 @@ The new virtual memory implementation is  derived  from
 the  MACH  operating  system  developed  at  Carnegie-Mellon
 University, and was ported to the BSD kernel at the  Univer-
 sity of Utah.  The MACH virtual memory system call interface
-has  been  replaced  with   the   ``mmap''-based   interface
-described  in  the ``Berkeley Software Architecture Manual''
+has  been  replaced  with   the   mmap-based   interface
+described  in  the Berkeley Software Architecture Manual
 (see the UNIX Programmer's Manual, Supplementary  Documents,
 PSD:5).   The interface is similar to the interfaces shipped
 by several commercial vendors such as Sun,  Novell/USL,  and
