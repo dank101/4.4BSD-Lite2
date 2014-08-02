@@ -60,7 +60,7 @@ should not claim conformance with  either  standard  without
 first validating the code.
 
 This software distribution is  only  available  on  two
-6250bpi  1/2''  9-track  tapes  or one 8mm Exabyte cassette.
+6250bpi  1/2"  9-track  tapes  or one 8mm Exabyte cassette.
 The 4.4BSD-Lite distribution contains source for the follow-
 ing architectures:
 
@@ -98,7 +98,7 @@ enhancement  of  the  local filesystems to support files and
 filesystems that are up to 2**63 bytes in size, an ISO CDROM
 9660 filesystem with Rockridge extensions, enhanced security
 and system management support, and  the  conversion  to  and
-addition  of  the  IEEE Std1003.1 (``POSIX'') facilities and
+addition  of  the  IEEE Std1003.1 (POSIX) facilities and
 many of the IEEE Std1003.2 facilities.   In  addition,  many
 new  tools  and additions to the C library are present.  The
 kernel  sources  have  been  reorganized  to   collect   all
@@ -175,7 +175,7 @@ memory-based filesystem that runs in pageable memory, allow-
 ing  large temporary filesystems without requiring dedicated
 physical memory.
 
-The local ``fast filesystem'' has been enhanced  to  do
+The local fast filesystem has been enhanced  to  do
 clustering  which  allows  large pieces of files to be allo-
 cated contiguously resulting in near doubling of  filesystem
 throughput.   The  filesystem interface has been extended to
@@ -193,9 +193,9 @@ can  only  be  cleared  by the super-user when the system is
 running single  user.   To  protect  against  indiscriminate
 reading  or  writing  of kernel memory, all writing and most
 reading of kernel data structures must be done using  a  new
-``sysctl''  interface.   The  information  to be accessed is
+sysctl  interface.   The  information  to be accessed is
 described through  an  extensible  ``Management  Information
-Base'' (MIB).
+Base (MIB).
 
 The  4.4BSD-Lite  distribution  contains  most  of  the
 interfaces  specified in the IEEE Std1003.1 system interface
@@ -258,7 +258,7 @@ provide the first real network authentication on BSD.
 
 This release includes several important structural ker-
 nel  changes.   The  kernel  uses a new internal system call
-convention; the use  of  global  (``u-dot'')  variables  for
+convention; the use  of  global  (u-dot)  variables  for
 parameters and error returns has been eliminated, and inter-
 rupted system calls no longer abort using  non-local  goto's
 (longjmp's).   A  new  sleep interface separates signal han-
@@ -288,7 +288,7 @@ Licensees  in ordering 4.4BSD-Lite.  The fee is $1000.00 for
 Because we are a research and development  organization
 and  not  a  commercial  organization,  we make our research
 results available for a small license  fee.   We  distribute
-only  the  whole system ``As Is'' and cannot send individual
+only  the  whole system "As Is" and cannot send individual
 pieces of the system.  We are required by the University  of
 California  to  have  a formal license arrangement with each
 organization to which we distribute.
@@ -359,9 +359,9 @@ The most expedient way to ensure that your full distri-
 bution  is  sent  as  quickly as possible is to include in a
 single package two original copies of the appropriate Berke-
 ley License Agreement completed and properly signed (without
-change), the appropriate check properly made  out  to  ``The
+change), the appropriate check properly made  out  to  The
 Regents  of  the  University of California, Computer Systems
-Research Group'' and a completely filled out  Site  Informa-
+Research Group and a completely filled out  Site  Informa-
 tion  Form  and  to  send this single package to the address
 noted above.
 
