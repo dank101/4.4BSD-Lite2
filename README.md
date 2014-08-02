@@ -7,7 +7,7 @@ Orginal Release message for 4.4BSD-Lite:
 Dear Colleague:
 
 
-     We are delighted, at long last, to send you information
+We are delighted, at long last, to send you information
 about our March 1994 release of 4.4BSD-Lite.  The University
 and UNIX System Laboratories have resolved the  issues  sur-
 rounding the second BSD Networking Release (Net/2) distribu-
