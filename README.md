@@ -5,7 +5,7 @@ Upload of the source of 4.4BSD-Lite2
 
 Orginal Release message for 4.4BSD-Lite:
 
-     Dear Colleague:
+Dear Colleague:
 
 
 We are delighted, at long last, to send you information
