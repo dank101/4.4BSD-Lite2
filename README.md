@@ -141,7 +141,7 @@ and  management  (FTAM), virtual terminals (VT), a directory
 services implementation  (X.500),  and  miscellaneous  other
 utilities.
 
-     A new virtual filesystem interface has  been  added  to
+A new virtual filesystem interface has  been  added  to
 the  kernel  to support multiple filesystems.  In comparison
 with other  interfaces,  the  Berkeley  interface  has  been
 structured  for  more  efficient support of filesystems that
